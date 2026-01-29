@@ -26,11 +26,11 @@ DROP TABLE Course;
 -- Part B: DML
 
 INSERT INTO Student VALUES
-(101, 'Rahul', 'CSE', 20, '9876543210', 'Delhi', 3),
-(102, 'Anita', 'ECE', 21, '9123456780', 'Patna', 4),
-(103, 'Rohit', 'CSE', 22, '9012345678', 'Ranchi', 5),
-(104, 'Priya', 'ME', 19, '9988776655', 'Kolkata', 2),
-(105, 'Aman', 'CE', 23, '8899776655', 'Patna', 6);
+(101, 'kajal', 'CSE', 20, '9876543210', 'Madhepura', 5),
+(102, 'smita', 'CSE', 21, '9123456780', 'Patna', 5),
+(103, 'Muskan', 'CE', 22, '9012345678', 'Ranchi', 5),
+(104, 'Priya', 'ME', 19, '9988776655', 'Kolkata', 5),
+(105, 'Nisha', 'CSE', 23, '8899776655', 'Patna', 5);
 
 SELECT * FROM Student;
 SELECT RollNo, Name FROM Student;
