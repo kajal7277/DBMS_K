@@ -1,6 +1,3 @@
--- Lab 1: SQL (DDL + DML)
--- Database: CollegeDB
-
 -- Part A: DDL
 
 CREATE DATABASE CollegeDB;
