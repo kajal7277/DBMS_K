@@ -1,26 +1,10 @@
-
--- =====================================================
--- DBMS Lab Assignment 2
--- College Database Design
--- File Name: lab2solution.sql
--- =====================================================
--- This script contains SQL CREATE TABLE statements
--- for Department, Faculty, Course, Student, and
--- Enrollment tables with proper constraints.
--- =====================================================
-
--- =========================
--- TABLE: Department
--- =========================
 CREATE TABLE Department (
     dept_id NUMBER PRIMARY KEY,
     dept_name VARCHAR2(50) NOT NULL UNIQUE,
     office_location VARCHAR2(50)
 );
 
--- =========================
--- TABLE: Faculty
--- =========================
+
 CREATE TABLE Faculty (
     faculty_id NUMBER PRIMARY KEY,
     name VARCHAR2(50) NOT NULL,
@@ -32,9 +16,6 @@ CREATE TABLE Faculty (
         REFERENCES Department(dept_id)
 );
 
--- =========================
--- TABLE: Course
--- =========================
 CREATE TABLE Course (
     course_id NUMBER PRIMARY KEY,
     course_name VARCHAR2(50) NOT NULL,
@@ -49,9 +30,6 @@ CREATE TABLE Course (
         REFERENCES Faculty(faculty_id)
 );
 
--- =========================
--- TABLE: Student
--- =========================
 CREATE TABLE Student (
     student_id NUMBER PRIMARY KEY,
     name VARCHAR2(50) NOT NULL,
@@ -64,9 +42,6 @@ CREATE TABLE Student (
         REFERENCES Department(dept_id)
 );
 
--- =========================
--- TABLE: Enrollment
--- =========================
 CREATE TABLE Enrollment (
     student_id NUMBER,
     course_id NUMBER,
@@ -81,7 +56,3 @@ CREATE TABLE Enrollment (
         FOREIGN KEY (course_id)
         REFERENCES Course(course_id)
 );
-
--- =====================================================
--- END OF lab2solution.sql
--- =====================================================
