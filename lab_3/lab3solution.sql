@@ -28,9 +28,9 @@ INSERT INTO course VALUES (308, 'Basic Electrical Engineering', 3, '110', 207);
 INSERT INTO course VALUES (309, 'Power Systems', 4, '110', 208);
 INSERT INTO course VALUES (310, 'Machine Learning Fundamentals', 4, '157', 209);
 
-INSERT INTO student VALUES (06, 'Kajal Kumari', DATE '2005-02-04', 'M', '9123456701', '105');
-INSERT INTO student VALUES (53, 'Smita Kumari', DATE '2003-08-21', 'M', '9123456702', '105');
-INSERT INTO student VALUES (27, 'Nisha Kumari', DATE '2004-01-15', 'M', '9123456703', '105');
+INSERT INTO student VALUES (06, 'Kajal Kumari', DATE '2005-02-04', 'F', '9123456701', '105');
+INSERT INTO student VALUES (53, 'Smita Kumari', DATE '2003-08-21', 'F', '9123456702', '105');
+INSERT INTO student VALUES (27, 'Nisha Kumari', DATE '2004-01-15', 'F', '9123456703', '105');
 INSERT INTO student VALUES (404, 'Priya Singh', DATE '2003-11-30', 'F', '9123456704', '101');
 INSERT INTO student VALUES (405, 'Vikash Kumar', DATE '2002-07-10', 'M', '9123456705', '101');
 INSERT INTO student VALUES (406, 'Neha Kumari', DATE '2004-03-18', 'F', '9123456706', '102');
@@ -65,4 +65,5 @@ SELECT * FROM department;
 SELECT * FROM faculty;
 SELECT * FROM course;
 SELECT * FROM student;
+
 SELECT * FROM enrollment;
